@@ -14,6 +14,9 @@ button{font-family:inherit;font-weight:800;font-size:17px;border:0;border-radius
 #letter{display:none;margin-top:20px;background:#fff7fa;border:1px dashed #f0a2bf;border-radius:20px;padding:18px 16px;animation:appear .7s ease}@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}#letter h2{margin:4px;color:#d94e83}#letter p{font-size:16px}.signature{font-weight:800;color:#d94e83}.tiny{font-size:12px;color:#c58aa2;margin-top:20px}
 .float{position:fixed;top:-30px;pointer-events:none;animation:fall linear forwards;z-index:5}@keyframes fall{to{transform:translateY(110vh) rotate(360deg);opacity:.1}}
 </style>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 </head>
 <body><main class="wrap">
 <div class="tag">♡ هدية صغيرة معمولة بحب ♡</div>
@@ -32,3 +35,4 @@ button{font-family:inherit;font-weight:800;font-size:17px;border:0;border-radius
 <script>
 const btn=document.getElementById('open'),letter=document.getElementById('letter');btn.addEventListener('click',()=>{letter.style.display='block';btn.textContent='💖 بحبك يا Dodo';btn.disabled=true;for(let i=0;i<32;i++){setTimeout(()=>{const e=document.createElement('span');e.className='float';e.textContent=['💗','💕','💖','✨'][Math.floor(Math.random()*4)];e.style.left=Math.random()*100+'vw';e.style.animationDuration=(3+Math.random()*4)+'s';e.style.fontSize=(15+Math.random()*18)+'px';document.body.appendChild(e);setTimeout(()=>e.remove(),7500)},i*90)}});
 </script></body></html>
+<!-- pages-refresh: 2026-11-08-dodo -->
